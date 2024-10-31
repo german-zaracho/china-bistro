@@ -1,0 +1,203 @@
+/* .container  */
+.jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
+#home-tiles {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#menu-tile,
+#specials-tile,
+#map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url('../../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+    max-width:360px;
+    margin:auto auto auto 0px;
+}
+
+.menuContainer {
+    padding: 0px;
+}
+
+#specials-tile {
+    background: url('../../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+    max-width:360px;
+    margin:auto;
+}
+
+#map-tile {
+    max-width:360px;
+    margin:auto 0px auto auto;
+}
+
+.mapContainer {
+    padding: 0px;
+}
+
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+@media (min-width: 1200px) {
+
+    /* .container  */
+    .jumbotron {
+        background: url('../../images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* .container  */
+    .jumbotron {
+        background: url('../../images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        max-width: 992px;
+        margin: 20px auto;
+    }
+
+    #home-tiles {
+        max-width: 992px;
+        /* margin: auto; */
+    }
+
+    #menu-tile {
+        max-width:290px;
+        /* margin:auto auto auto 0px; */
+    }
+    
+    /* .menuContainer {
+        padding: 0px;
+    } */
+    
+    #specials-tile {
+        max-width:290px;
+        /* margin:auto; */
+    }
+    
+    #map-tile {
+        max-width:290px;
+        /* margin:auto 0px auto auto; */
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* .container  */
+    .jumbotron {
+        background: url('../../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        max-width: 768px;
+        margin: 20px auto;
+    }
+
+    #home-tiles {
+        max-width: 768px;
+        /* margin: auto; */
+    }
+
+    .menuContainer {
+        margin-bottom: 20px;
+    }
+
+    .specialsContainer {
+        padding-right: 0px;
+    }
+
+    #specials-tile {
+        margin-right: 0px;
+    }
+
+    #map-tile {
+        min-width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* .container */
+    .jumbotron {
+        margin: 30px 20px;
+        padding: 0;
+    }
+
+    #menu-tile,
+    #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+
+    .menu-item-photo {
+        margin-right: auto;
+    }
+
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+
+    .menu-item-description {
+        text-align: center;
+        ;
+    }
+
+    #map-tile {
+        margin:auto auto auto auto;
+    }
+}
+
+@media (max-width: 479px) {
+
+    #menu-tile,
+    #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+
+    #map-tile {
+        width: 280px;
+    }
+}
